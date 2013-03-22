@@ -38,10 +38,10 @@ object DateExtractorHelper {
   private val inner = "> <http://www.w3.org/2000/01/rdf-schema#label> \""
   private val months = "(" + monthsen.keySet.mkString("|") + ")"
 
-  private val monthlinestr = prefix + months + inner + "([^\"]*)\".*"
+  private val monthlinestr = prefix + months + inner + "([^\"]*)\"@([^\s]*).*"
   private val MonthLine = monthlinestr.r
 
-  private val monthdaylinestr = prefix + months + "_([0-9]*)" + inner + "([^\"]*)\".*"
+  private val monthdaylinestr = prefix + months + "_([0-9]*)" + inner + "([^\"]*)\"@([^\s]*).*"
   private val MonthDayLine = monthdaylinestr.r
 
   def mkmonthinner(in: Map[String, Int]) = {
@@ -53,25 +53,24 @@ object DateExtractorHelper {
     var foundmonths:Map[String,Int] = Map()
     var foundmonthdays:Map[String,(String,String)] = Map()
     var ords:ListBuffer[String] = ListBuffer()
-    // add in to regexes
-    //var langs:ListBuffer[String] = ListBuffer()
+    var langs:ListBuffer[String] = ListBuffer()
 
     val lines = io.Source.fromFile(file).getLines.toList
     for(line <- lines) line match {
-      case MonthLine(e, f) => foundmonths += (f -> monthsen(e)) //; langs += l
-      case MonthDayLine(m, d, f) => val x = (m, d); foundmonthdays += (f -> x) //; langs += l
+      case MonthLine(e, f, l) => foundmonths += (f -> monthsen(e)); langs += l
+      case MonthDayLine(m, d, f, l) => val x = (m, d); foundmonthdays += (f -> x); langs += l
       case _ =>
     }
 
-    if(foundmonths < 12) {
+    if(foundmonths.size < 12) {
       println("Warning: fewer than 12 months found!")
     }
-    //val langset = langs.toList.toSet
-    //if(langset.size != 1) {
-    //  println("Warning: found more than one language in dataset")
-    //  println("Cannot continue: results will be useless")
-    //  exit(-1)
-    //}
+    val langset = langs.toList.toSet
+    if(langset.size != 1) {
+      println("Warning: found more than one language in dataset")
+      println("Cannot continue: results will be useless")
+      exit(-1)
+    }
 
     println("Add to ...")
     println("     \"" + lang + "\" -> Map(" + mkmonthinner(foundmonths) + "),")
