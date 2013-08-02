@@ -772,6 +772,80 @@
         <templateRepresentativeProperty tplName="IPA3" pKey="1" />
         <templateRepresentativeProperty tplName="AS3" pKey="1" />
     </templateRepresentativeProperties>
+    <nodeHandlers>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="odmiana-rzeczownik-polski">
+            <mapping label="Mianownik lp" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="Mianownik lm" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="Dopełniacz lp" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="Dopełniacz lm" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="Celownik lp" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="Celownik lm" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="Biernik lp" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="Biernik lm" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="Narzędnik lp" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="Narzędnik lm" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="Miejscownik lp" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="Miejscownik lm" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="Wołacz lp" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="Wołacz lm" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="odmiana-rzeczownik-rosyjski">
+            <mapping label="Mianownik lp" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="Mianownik lm" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="Dopełniacz lp" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="Dopełniacz lm" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="Celownik lp" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="Celownik lm" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="Biernik lp" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="Biernik lm" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="Narzędnik lp" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="Narzędnik lm" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="Miejscownik lp" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="Miejscownik lm" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="odmiana-rzeczownik-ukraiński">
+            <mapping label="Mianownik lp" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="Mianownik lm" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="Dopełniacz lp" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="Dopełniacz lm" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="Celownik lp" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="Celownik lm" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="Biernik lp" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="Biernik lm" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="Narzędnik lp" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="Narzędnik lm" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="Miejscownik lp" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="Miejscownik lm" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="Wołacz lp" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="Wołacz lm" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="odmiana-rzeczownik-staroangielski">
+            <mapping label="Mianownik lp" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="Mianownik lm" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="Dopełniacz lp" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="Dopełniacz lm" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="Celownik lp" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="Celownik lm" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="Biernik lp" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="Biernik lm" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="odmiana-rzeczownik-kaszubski">
+            <mapping label="Mianownik lp" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="Mianownik lm" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="Dopełniacz lp" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="Dopełniacz lm" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="Celownik lp" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="Celownik lm" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="Biernik lp" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="Biernik lm" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="Narzędnik lp" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="Narzędnik lm" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="Miejscownik lp" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="Miejscownik lm" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="Wołacz lp" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="Wołacz lm" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+    </nodeHandlers>
     <page name="page">
         <triples>
             <!-- a label -->
