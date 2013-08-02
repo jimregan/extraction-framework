@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <ignore>
+        <page startsWith="Media:" />
+        <page startsWith="Specjalna:" />
+        <page startsWith="Dyskusja:" />
+        <page startsWith="Wikipedysta:" />
+        <page startsWith="Dyskusja wikipedysty:" />
+        <page startsWith="Wikisłownik:" />
+        <page startsWith="Wikidyskusja:" />
+        <page startsWith="Plik:" />
+        <page startsWith="Dyskusja pliku:" />
+        <page startsWith="MediaWiki:" />
+        <page startsWith="Dyskusja MediaWiki:" />
+        <page startsWith="Szablon:" />
+        <page startsWith="Dyskusja szablonu:" />
+        <page startsWith="Pomoc:" />
+        <page startsWith="Dyskusja pomocy:" />
+        <page startsWith="Kategoria:" />
+        <page startsWith="Dyskusja kategorii:" />
+        <page startsWith="Aneks:" />
+        <page startsWith="Dyskusja aneksu:" />
+        <page startsWith="Indeks:" />
+        <page startsWith="Dyskusja indeksu:" />
+        <page startsWith="Portal:" />
+        <page startsWith="Dyskusja portalu:" />
+    </ignore>
+    <mappings>
+        <mapping from="rzeczownik" to="Noun"/>
+        <mapping from="czasownik" to="Verb"/>
+        <mapping from="przymiotnik" to="Adjective"/>
+        <mapping from="rodzaj żeński" to="Feminine"/>
+        <mapping from="f" to="Feminine"/>
+        <mapping from="rodzaj wspólny" to="Common"/>
+        <mapping from="w" to="Common"/>
+        <mapping from="rodzaj nijaki" to="Neuter"/>
+        <mapping from="n" to="Neuter"/>
+        <mapping from="rodzaj męski" to="Masculine"/>
+        <mapping from="m" to="Masculine"/>
+
+
+        <mapping from="język !Xóõ" to="!Xóõ" />
+        <mapping from="!Xóõ" to="!Xóõ" />
+        <mapping from="język a-pucikwar" to="A-Pucikwar" />
+        <mapping from="a-pucikwar" to="A-Pucikwar" />
+        <mapping from="język abazyński" to="Abaza" />
+        <mapping from="abazyński" to="Abaza" />
+        <mapping from="abaz" to="Abaza" />
+        <mapping from="język abchaski" to="Abkhazian" />
+        <mapping from="abchaski" to="Abkhazian" />
+        <mapping from="język abenaki" to="Abnaki" />
+        <mapping from="abenaki" to="Abnaki" />
+        <mapping from="język abua" to="Abua" />
+        <mapping from="abua" to="Abua" />
+        <mapping from="język aczoli" to="Acoli" />
+        <mapping from="aczoli" to="Acoli" />
+        <mapping from="język adjukru" to="Adioukrou" />
+        <mapping from="adjukru" to="Adioukrou" />
+        <mapping from="język adygejski" to="Adyghe" />
+        <mapping from="adygejski" to="Adyghe" />
+        <mapping from="język afar" to="Afar" />
+        <mapping from="afar" to="Afar" />
+        <mapping from="język afrykanerski" to="Afrikaans" />
+        <mapping from="afrykanerski" to="Afrikaans" />
+        <mapping from="afr" to="Afrikaans" />
+        <mapping from="język ajmara" to="Aymara" />
+        <mapping from="ajmara" to="Aymara" />
+        <mapping from="język akadyjski" to="Akkadian" />
+        <mapping from="akadyjski" to="Akkadian" />
+        <mapping from="akad" to="Akkadian" />
+        <mapping from="język akan" to="Akan" />
+        <mapping from="akan" to="Akan" />
+        <mapping from="język aklanon" to="Aklanon" />
+        <mapping from="aklanon" to="Aklanon" />
+        <mapping from="język alabama" to="Alabama" />
+        <mapping from="alabama" to="Alabama" />
+        <mapping from="język albański" to="Albanian" />
+        <mapping from="albański" to="Albanian" />
+        <mapping from="alb" to="Albanian" />
+        <mapping from="język alemański" to="Alemannic" />
+        <mapping from="alemański" to="Alemannic" />
+        <mapping from="język aleucki" to="Aleut" />
+        <mapping from="aleucki" to="Aleut" />
+        <mapping from="język ama" to="AmaPapuaNewGuinea" />
+        <mapping from="ama" to="AmaPapuaNewGuinea" />
+        <mapping from="język amharski" to="Amharic" />
+        <mapping from="amharski" to="Amharic" />
+        <mapping from="język angielski" to="English" />
+        <mapping from="angielski" to="English" />
+        <mapping from="ang" to="English" />
+        <mapping from="język arabski" to="Arabic" />
+        <mapping from="arabski" to="Arabic" />
+        <mapping from="arab" to="Arabic" />
+        <mapping from="język aragoński" to="Aragonese" />
+        <mapping from="aragoński" to="Aragonese" />
+        <mapping from="język aramejski" to="Aramaic" />
+        <mapping from="aramejski" to="Aramaic" />
+        <mapping from="język arapaho" to="Arapaho" />
+        <mapping from="arapaho" to="Arapaho" />
+        <mapping from="język arczyński" to="Archi" />
+        <mapping from="arczyński" to="Archi" />
+        <mapping from="język arumuński" to="Aromanian" />
+        <mapping from="arumuński" to="Aromanian" />
+        <mapping from="język assamski" to="Assamese" />
+        <mapping from="assamski" to="Assamese" />
+        <mapping from="język asturyjski" to="Asturian" />
+        <mapping from="asturyjski" to="Asturian" />
+        <mapping from="język awarski" to="Avar" />
+        <mapping from="awarski" to="Avar" />
+        <mapping from="język azerski" to="Azerbaijani" />
+        <mapping from="azerski" to="Azerbaijani" />
+        <mapping from="język bambara" to="Bambara" />
+        <mapping from="bambara" to="Bambara" />
+        <mapping from="język banjumasański" to="Javanese" />
+        <mapping from="banjumasański" to="Javanese" />
+        <mapping from="język baskijski" to="Basque" />
+        <mapping from="baskijski" to="Basque" />
+        <mapping from="bask" to="Basque" />
+        <mapping from="język baszkirski" to="Bashkir" />
+        <mapping from="baszkirski" to="Bashkir" />
+        <mapping from="język bawarski" to="Bavarian" />
+        <mapping from="bawarski" to="Bavarian" />
+        <mapping from="język beludżi" to="Balochi" />
+        <mapping from="beludżi" to="Balochi" />
+        <mapping from="język bengalski" to="Bengali" />
+        <mapping from="bengalski" to="Bengali" />
+        <mapping from="język białoruski" to="Belarusian" />
+        <mapping from="białoruski" to="Belarusian" />
+        <mapping from="białor" to="Belarusian" />
+        <mapping from="język białoruski (taraszkiewica)" to="BelarusianTarask" />
+        <mapping from="białoruski (taraszkiewica)" to="BelarusianTarask" />
+        <mapping from="język birmański" to="Burmese" />
+        <mapping from="birmański" to="Burmese" />
+        <mapping from="język bislama" to="Bislama" />
+        <mapping from="bislama" to="Bislama" />
+        <mapping from="język boloński" to="Bolognese" />
+        <mapping from="boloński" to="Bolognese" />
+        <mapping from="język bośniacki" to="Bosnian" />
+        <mapping from="bośniacki" to="Bosnian" />
+        <mapping from="bośn" to="Bosnian" />
+        <mapping from="język bretoński" to="Breton" />
+        <mapping from="bretoński" to="Breton" />
+        <mapping from="bret" to="Breton" />
+        <mapping from="język bugijski" to="Buginese" />
+        <mapping from="bugijski" to="Buginese" />
+        <mapping from="język bułgarski" to="Bulgarian" />
+        <mapping from="bułgarski" to="Bulgarian" />
+        <mapping from="bułg" to="Bulgarian" />
+        <mapping from="język cebuano" to="Cebuano" />
+        <mapping from="cebuano" to="Cebuano" />
+        <mapping from="język chakaski" to="Khakas" />
+        <mapping from="chakaski" to="Khakas" />
+        <mapping from="chak" to="Khakas" />
+        <mapping from="język chantyjski (kazymski)" to="KhantyKazym" />
+        <mapping from="chantyjski (kazymski)" to="KhantyKazym" />
+        <mapping from="język chantyjski (surgucki)" to="KhantySurgut" />
+        <mapping from="chantyjski (surgucki)" to="KhantySurgut" />
+        <mapping from="język chantyjski (szuryszkarski)" to="KhantyShuryshkar" />
+        <mapping from="chantyjski (szuryszkarski)" to="KhantyShuryshkar" />
+        <mapping from="język chantyjski (wachowski)" to="KhantyVakh" />
+        <mapping from="chantyjski (wachowski)" to="KhantyVakh" />
+        <mapping from="język chickasaw" to="Chickasaw" />
+        <mapping from="chickasaw" to="Chickasaw" />
+        <mapping from="język chiński standardowy" to="Mandarin" />
+        <mapping from="chiński standardowy" to="Mandarin" />
+        <mapping from="język chorwacki" to="Croatian" />
+        <mapping from="chorwacki" to="Croatian" />
+        <mapping from="chorw" to="Croatian" />
+        <mapping from="język czagatajski" to="Chagatai" />
+        <mapping from="czagatajski" to="Chagatai" />
+        <mapping from="czag" to="Chagatai" />
+        <mapping from="język czamorro" to="Chamorro" />
+        <mapping from="czamorro" to="Chamorro" />
+        <mapping from="język czarnogórski" to="Montenegrin" />
+        <mapping from="czarnogórski" to="Montenegrin" />
+        <mapping from="język czeczeński" to="Chechen" />
+        <mapping from="czeczeński" to="Chechen" />
+        <mapping from="język czeski" to="Czech" />
+        <mapping from="czeski" to="Czech" />
+        <mapping from="czes" to="Czech" />
+        <mapping from="język cziczewa" to="Chichewa" />
+        <mapping from="cziczewa" to="Chichewa" />
+        <mapping from="język czirokeski" to="Cherokee" />
+        <mapping from="czirokeski" to="Cherokee" />
+        <mapping from="język czuwaski" to="Chuvash" />
+        <mapping from="czuwaski" to="Chuvash" />
+        <mapping from="język dalmatyński" to="Dalmatian" />
+        <mapping from="dalmatyński" to="Dalmatian" />
+        <mapping from="język dari" to="Persian" />
+        <mapping from="dari" to="Persian" />
+        <mapping from="język dolnoniemiecki" to="LowGerman" />
+        <mapping from="dolnoniemiecki" to="LowGerman" />
+        <mapping from="język dolnołużycki" to="LowerSorbian" />
+        <mapping from="dolnołużycki" to="LowerSorbian" />
+        <mapping from="dłuż" to="LowerSorbian" />
+        <mapping from="język dołgański" to="Dolgan" />
+        <mapping from="dołgański" to="Dolgan" />
+        <mapping from="język duński" to="Danish" />
+        <mapping from="duński" to="Danish" />
+        <mapping from="duń" to="Danish" />
+        <mapping from="język dzongkha" to="Dzongkha" />
+        <mapping from="dzongkha" to="Dzongkha" />
+        <mapping from="język erzja" to="Erzya" />
+        <mapping from="erzja" to="Erzya" />
+        <mapping from="język estoński" to="Estonian" />
+        <mapping from="estoński" to="Estonian" />
+        <mapping from="język estremadurski" to="Extremaduran" />
+        <mapping from="estremadurski" to="Extremaduran" />
+        <mapping from="język ewenkijski" to="Evenki" />
+        <mapping from="ewenkijski" to="Evenki" />
+        <mapping from="język farerski" to="Faroese" />
+        <mapping from="farerski" to="Faroese" />
+        <mapping from="far" to="Faroese" />
+        <mapping from="język fenicki" to="Phoenician" />
+        <mapping from="fenicki" to="Phoenician" />
+        <mapping from="język fidżyjski" to="Fijian" />
+        <mapping from="fidżyjski" to="Fijian" />
+        <mapping from="fidż" to="Fijian" />
+        <mapping from="język filipino" to="Filipino" />
+        <mapping from="filipino" to="Filipino" />
+        <mapping from="język fiński" to="Finnish" />
+        <mapping from="fiński" to="Finnish" />
+        <mapping from="fiń" to="Finnish" />
+        <mapping from="język francuski" to="French" />
+        <mapping from="francuski" to="French" />
+        <mapping from="franc" to="French" />
+        <mapping from="język friulski" to="Friulian" />
+        <mapping from="friulski" to="Friulian" />
+        <mapping from="friu" to="Friulian" />
+        <mapping from="język fryzyjski" to="Frisian" />
+        <mapping from="fryzyjski" to="Frisian" />
+        <mapping from="fryz" to="Frisian" />
+        <mapping from="język fryzyjski saterlandzki" to="SaterlandFrisian" />
+        <mapping from="fryzyjski saterlandzki" to="SaterlandFrisian" />
+        <mapping from="język ful" to="Fulah" />
+        <mapping from="ful" to="Fulah" />
+        <mapping from="język ga" to="Ga" />
+        <mapping from="ga" to="Ga" />
+        <mapping from="język gagauski" to="Gagauz" />
+        <mapping from="gagauski" to="Gagauz" />
+        <mapping from="język galijski" to="Gaulish" />
+        <mapping from="galijski" to="Gaulish" />
+        <mapping from="gal" to="Gaulish" />
+        <mapping from="język galicyjski" to="Galician" />
+        <mapping from="galicyjski" to="Galician" />
+        <mapping from="galic" to="Galician" />
+        <mapping from="język gaskoński" to="Gascon" />
+        <mapping from="gaskoński" to="Gascon" />
+        <mapping from="język giliański" to="Gilaki" />
+        <mapping from="giliański" to="Gilaki" />
+        <mapping from="język gocki" to="Gothic" />
+        <mapping from="gocki" to="Gothic" />
+        <mapping from="goc" to="Gothic" />
+        <mapping from="język grecki" to="Greek" />
+        <mapping from="grecki" to="Greek" />
+        <mapping from="język grenlandzki" to="Greenlandic" />
+        <mapping from="grenlandzki" to="Greenlandic" />
+        <mapping from="język gruziński" to="Georgian" />
+        <mapping from="gruziński" to="Georgian" />
+        <mapping from="język guarani" to="Guarani" />
+        <mapping from="guarani" to="Guarani" />
+        <mapping from="gn" to="Guarani" />
+        <mapping from="język gudźarati" to="Gujarati" />
+        <mapping from="gudźarati" to="Gujarati" />
+        <mapping from="język gyyz" to="Geez" />
+        <mapping from="gyyz" to="Geez" />
+        <mapping from="język górnołużycki" to="UpperSorbian" />
+        <mapping from="górnołużycki" to="UpperSorbian" />
+        <mapping from="głuż" to="UpperSorbian" />
+        <mapping from="język haitański" to="HaitianCreole" />
+        <mapping from="haitański" to="HaitianCreole" />
+        <mapping from="język hausa" to="Hausa" />
+        <mapping from="hausa" to="Hausa" />
+        <mapping from="hau" to="Hausa" />
+        <mapping from="język hawajski" to="Hawaiian" />
+        <mapping from="hawajski" to="Hawaiian" />
+        <mapping from="język hebrajski" to="Hebrew" />
+        <mapping from="hebrajski" to="Hebrew" />
+        <mapping from="hebr" to="Hebrew" />
+        <mapping from="język herero" to="Herero" />
+        <mapping from="herero" to="Herero" />
+        <mapping from="język hindi" to="Hindi" />
+        <mapping from="hindi" to="Hindi" />
+        <mapping from="hin" to="Hindi" />
+        <mapping from="język hiligaynon" to="Hiligaynon" />
+        <mapping from="hiligaynon" to="Hiligaynon" />
+        <mapping from="język hiszpański" to="Spanish" />
+        <mapping from="hiszpański" to="Spanish" />
+        <mapping from="hiszp" to="Spanish" />
+        <mapping from="język holenderski" to="Dutch" />
+        <mapping from="holenderski" to="Dutch" />
+        <mapping from="hol" to="Dutch" />
+        <mapping from="język hupa" to="Hupa" />
+        <mapping from="hupa" to="Hupa" />
+        <mapping from="hup" to="Hupa" />
+        <mapping from="język ilokano" to="Iloko" />
+        <mapping from="ilokano" to="Iloko" />
+        <mapping from="język indonezyjski" to="Indonesian" />
+        <mapping from="indonezyjski" to="Indonesian" />
+        <mapping from="język inguski" to="Ingush" />
+        <mapping from="inguski" to="Ingush" />
+        <mapping from="język inupiak" to="Inupiat" />
+        <mapping from="inupiak" to="Inupiat" />
+        <mapping from="język irlandzki" to="Irish" />
+        <mapping from="irlandzki" to="Irish" />
+        <mapping from="język islandzki" to="Icelandic" />
+        <mapping from="islandzki" to="Icelandic" />
+        <mapping from="język istriocki" to="Istriot" />
+        <mapping from="istriocki" to="Istriot" />
+        <mapping from="język jakucki" to="Sakha" />
+        <mapping from="jakucki" to="Sakha" />
+        <mapping from="język jawajski" to="Javanese" />
+        <mapping from="jawajski" to="Javanese" />
+        <mapping from="język jaćwieski" to="Sudovian" />
+        <mapping from="jaćwieski" to="Sudovian" />
+        <mapping from="język jaćwiński" to="Sudovian" />
+        <mapping from="jaćwiński" to="Sudovian" />
+        <mapping from="język joruba" to="Yoruba" />
+        <mapping from="joruba" to="Yoruba" />
+        <mapping from="język kabardyjski" to="Kabardian" />
+        <mapping from="kabardyjski" to="Kabardian" />
+        <mapping from="język kabylski" to="Kabyle" />
+        <mapping from="kabylski" to="Kabyle" />
+        <mapping from="język kakczikel" to="Kaqchikel" />
+        <mapping from="kakczikel" to="Kaqchikel" />
+        <mapping from="język kannada" to="Kannada" />
+        <mapping from="kannada" to="Kannada" />
+        <mapping from="język karaczajsko-bałkarski" to="KarachayBalkar" />
+        <mapping from="karaczajsko-bałkarski" to="KarachayBalkar" />
+        <mapping from="język karaimski" to="Karaim" />
+        <mapping from="karaimski" to="Karaim" />
+        <mapping from="język karakałpacki" to="Kara-Kalpak" />
+        <mapping from="karakałpacki" to="Kara-Kalpak" />
+        <mapping from="język karatajski" to="Karata" />
+        <mapping from="karatajski" to="Karata" />
+        <mapping from="język karelski" to="Karelian" />
+        <mapping from="karelski" to="Karelian" />
+        <mapping from="język kaszmirski" to="Kashmiri" />
+        <mapping from="kaszmirski" to="Kashmiri" />
+        <mapping from="język kaszubski" to="Kashubian" />
+        <mapping from="kaszubski" to="Kashubian" />
+        <mapping from="język kataloński" to="Catalan" />
+        <mapping from="kataloński" to="Catalan" />
+        <mapping from="język kazachski" to="Kazakh" />
+        <mapping from="kazachski" to="Kazakh" />
+        <mapping from="język kałmucki" to="Kalmyk" />
+        <mapping from="kałmucki" to="Kalmyk" />
+        <mapping from="język keczua" to="Quechua" />
+        <mapping from="keczua" to="Quechua" />
+        <mapping from="język khmerski" to="Khmer" />
+        <mapping from="khmerski" to="Khmer" />
+        <mapping from="język kirgiski" to="Kyrgyz" />
+        <mapping from="kirgiski" to="Kyrgyz" />
+        <mapping from="język klingoński" to="Klingon" />
+        <mapping from="klingoński" to="Klingon" />
+        <mapping from="język komi" to="Komi" />
+        <mapping from="komi" to="Komi" />
+        <mapping from="język komi-jaźwiński" to="KomiYodzyak" />
+        <mapping from="komi-jaźwiński" to="KomiYodzyak" />
+        <mapping from="język komi-permiacki" to="KomiPermyak" />
+        <mapping from="komi-permiacki" to="KomiPermyak" />
+        <mapping from="język komi-zyriański" to="KomiZyrian" />
+        <mapping from="komi-zyriański" to="KomiZyrian" />
+        <mapping from="język konkani" to="Konkani" />
+        <mapping from="konkani" to="Konkani" />
+        <mapping from="język koptyjski" to="Coptic" />
+        <mapping from="koptyjski" to="Coptic" />
+        <mapping from="język kornijski" to="Cornish" />
+        <mapping from="kornijski" to="Cornish" />
+        <mapping from="język korsykański" to="Corsican" />
+        <mapping from="korsykański" to="Corsican" />
+        <mapping from="język kri" to="Cree" />
+        <mapping from="kri" to="Cree" />
+        <mapping from="język krymskotatarski" to="CrimeanTatar" />
+        <mapping from="krymskotatarski" to="CrimeanTatar" />
+        <mapping from="język kumycki" to="Kumyk" />
+        <mapping from="kumycki" to="Kumyk" />
+        <mapping from="język kurdyjski" to="Kurdish" />
+        <mapping from="kurdyjski" to="Kurdish" />
+        <mapping from="język kurmandżi" to="Kurmanji" />
+        <mapping from="kurmandżi" to="Kurmanji" />
+        <mapping from="język ladyński" to="Ladino" />
+        <mapping from="ladyński" to="Ladino" />
+        <mapping from="język langwedocki" to="Languedocien" />
+        <mapping from="langwedocki" to="Languedocien" />
+        <mapping from="język laotański" to="Lao" />
+        <mapping from="laotański" to="Lao" />
+        <mapping from="język lazyjski" to="Laz" />
+        <mapping from="lazyjski" to="Laz" />
+        <mapping from="język lezgiński" to="Lezghian" />
+        <mapping from="lezgiński" to="Lezghian" />
+        <mapping from="język liguryjski" to="Ligurian" />
+        <mapping from="liguryjski" to="Ligurian" />
+        <mapping from="język limburski" to="Limburgish" />
+        <mapping from="limburski" to="Limburgish" />
+        <mapping from="język litewski" to="Lithuanian" />
+        <mapping from="litewski" to="Lithuanian" />
+        <mapping from="język lombardzki" to="Lombard" />
+        <mapping from="lombardzki" to="Lombard" />
+        <mapping from="język luganda" to="Luganda" />
+        <mapping from="luganda" to="Luganda" />
+        <mapping from="język luksemburski" to="Luxembourgish" />
+        <mapping from="luksemburski" to="Luxembourgish" />
+        <mapping from="język luo" to="Dholuo" />
+        <mapping from="luo" to="Dholuo" />
+        <mapping from="język macedoński" to="Macedonian" />
+        <mapping from="macedoński" to="Macedonian" />
+        <mapping from="język malajalam" to="Malayalam" />
+        <mapping from="malajalam" to="Malayalam" />
+        <mapping from="język malajski" to="Malay" />
+        <mapping from="malajski" to="Malay" />
+        <mapping from="język malediwski" to="Maldivian" />
+        <mapping from="malediwski" to="Maldivian" />
+        <mapping from="język malgaski" to="Malagasy" />
+        <mapping from="malgaski" to="Malagasy" />
+        <mapping from="język maltański" to="Maltese" />
+        <mapping from="maltański" to="Maltese" />
+        <mapping from="język manx" to="Manx" />
+        <mapping from="manx" to="Manx" />
+        <mapping from="język maoryski" to="Maori" />
+        <mapping from="maoryski" to="Maori" />
+        <mapping from="język marathi" to="Marathi" />
+        <mapping from="marathi" to="Marathi" />
+        <mapping from="język marszalski" to="Marshallese" />
+        <mapping from="marszalski" to="Marshallese" />
+        <mapping from="język maryjski" to="Mari" />
+        <mapping from="maryjski" to="Mari" />
+        <mapping from="język mazanderański" to="Mazanderani" />
+        <mapping from="mazanderański" to="Mazanderani" />
+        <mapping from="język mikmak" to="Micmac" />
+        <mapping from="mikmak" to="Micmac" />
+        <mapping from="język minangkabau" to="Minangkabau" />
+        <mapping from="minangkabau" to="Minangkabau" />
+        <mapping from="język minnan" to="MinNanChinese" />
+        <mapping from="minnan" to="MinNanChinese" />
+        <mapping from="język mirandyjski" to="Mirandese" />
+        <mapping from="mirandyjski" to="Mirandese" />
+        <mapping from="język mohawk" to="Mohawk" />
+        <mapping from="mohawk" to="Mohawk" />
+        <mapping from="język moksza" to="Moksha" />
+        <mapping from="moksza" to="Moksha" />
+        <mapping from="język mongolski" to="Mongolian" />
+        <mapping from="mongolski" to="Mongolian" />
+        <mapping from="język motu" to="Motu" />
+        <mapping from="motu" to="Motu" />
+        <mapping from="język mołdawski" to="Moldovan" />
+        <mapping from="mołdawski" to="Moldovan" />
+        <mapping from="język nahuatl" to="Nahuatl" />
+        <mapping from="nahuatl" to="Nahuatl" />
+        <mapping from="język nauruański" to="Nauruan" />
+        <mapping from="nauruański" to="Nauruan" />
+        <mapping from="język nawaho" to="Navajo" />
+        <mapping from="nawaho" to="Navajo" />
+        <mapping from="język neapolitański" to="Neapolitan" />
+        <mapping from="neapolitański" to="Neapolitan" />
+        <mapping from="język neo" to="Neo" />
+        <mapping from="neo" to="Neo" />
+        <mapping from="język nepalski" to="Nepali" />
+        <mapping from="nepalski" to="Nepali" />
+        <mapping from="język newarski" to="Newari" />
+        <mapping from="newarski" to="Newari" />
+        <mapping from="język niemiecki" to="German" />
+        <mapping from="niemiecki" to="German" />
+        <mapping from="język nieniecki" to="Nenets" />
+        <mapping from="nieniecki" to="Nenets" />
+        <mapping from="język normandzki" to="Norman" />
+        <mapping from="normandzki" to="Norman" />
+        <mapping from="język norweski (bokmål)" to="NorwegianBokmal" />
+        <mapping from="norweski (bokmål)" to="NorwegianBokmal" />
+        <mapping from="język norweski (bookmål)" to="NorwegianBokmal" />
+        <mapping from="norweski (bookmål)" to="NorwegianBokmal" />
+        <mapping from="język norweski (nynorsk)" to="NorwegianNynorsk" />
+        <mapping from="norweski (nynorsk)" to="NorwegianNynorsk" />
+        <mapping from="język nowogrecki" to="ModernGreek" />
+        <mapping from="nowogrecki" to="ModernGreek" />
+        <mapping from="el" to="ModernGreek" />
+        <mapping from="język orija" to="Oriya" />
+        <mapping from="orija" to="Oriya" />
+        <mapping from="język ormiański" to="Armenian" />
+        <mapping from="ormiański" to="Armenian" />
+        <mapping from="język oromo" to="Oromo" />
+        <mapping from="oromo" to="Oromo" />
+        <mapping from="język osetyjski" to="Ossetian" />
+        <mapping from="osetyjski" to="Ossetian" />
+        <mapping from="język osmańsko-turecki" to="OttomanTurkish" />
+        <mapping from="osmańsko-turecki" to="OttomanTurkish" />
+        <mapping from="język pali" to="Pali" />
+        <mapping from="pali" to="Pali" />
+        <mapping from="język paszto" to="Pashto" />
+        <mapping from="paszto" to="Pashto" />
+        <mapping from="język pendżabski" to="Punjabi" />
+        <mapping from="pendżabski" to="Punjabi" />
+        <mapping from="język pensylwański" to="PennsylvaniaGerman" />
+        <mapping from="pensylwański" to="PennsylvaniaGerman" />
+        <mapping from="język perski" to="Persian" />
+        <mapping from="perski" to="Persian" />
+        <mapping from="język piemoncki" to="Piedmontese" />
+        <mapping from="piemoncki" to="Piedmontese" />
+        <mapping from="język pikardyjski" to="Picard" />
+        <mapping from="pikardyjski" to="Picard" />
+        <mapping from="język pirahã" to="Pirahã" />
+        <mapping from="pirahã" to="Pirahã" />
+        <mapping from="język plautdietsch" to="Plautdietsch" />
+        <mapping from="plautdietsch" to="Plautdietsch" />
+        <mapping from="język polski" to="Polish" />
+        <mapping from="polski" to="Polish" />
+        <mapping from="język portugalski" to="Portuguese" />
+        <mapping from="portugalski" to="Portuguese" />
+        <mapping from="język połabski" to="Polabian" />
+        <mapping from="połabski" to="Polabian" />
+        <mapping from="język prowansalski" to="Provençal" />
+        <mapping from="prowansalski" to="Provençal" />
+        <mapping from="język pruski" to="Prussian" />
+        <mapping from="pruski" to="Prussian" />
+        <mapping from="język północnofryzyjski" to="NorthFrisian" />
+        <mapping from="północnofryzyjski" to="NorthFrisian" />
+        <mapping from="język północnolapoński" to="NorthernSami" />
+        <mapping from="północnolapoński" to="NorthernSami" />
+        <mapping from="język północny sotho" to="NorthernSotho" />
+        <mapping from="północny sotho" to="NorthernSotho" />
+        <mapping from="język rarotonga" to="CookIslandsMaori" />
+        <mapping from="rarotonga" to="CookIslandsMaori" />
+        <mapping from="język rohingya" to="Rohingya" />
+        <mapping from="rohingya" to="Rohingya" />
+        <mapping from="język romansz" to="Romansch" />
+        <mapping from="romansz" to="Romansch" />
+        <mapping from="język romski" to="Romani" />
+        <mapping from="romski" to="Romani" />
+        <mapping from="język rosyjski" to="Russian" />
+        <mapping from="rosyjski" to="Russian" />
+        <mapping from="język rumuński" to="Romanian" />
+        <mapping from="rumuński" to="Romanian" />
+        <mapping from="język rundi" to="Kirundi" />
+        <mapping from="rundi" to="Kirundi" />
+        <mapping from="język kirundi" to="Kirundi" />
+        <mapping from="kirundi" to="Kirundi" />
+        <mapping from="język rusiński" to="Rusyn" />
+        <mapping from="rusiński" to="Rusyn" />
+        <mapping from="język russenorsk" to="Russenorsk" />
+        <mapping from="russenorsk" to="Russenorsk" />
+        <mapping from="język sardyński" to="Sardinian" />
+        <mapping from="sardyński" to="Sardinian" />
+        <mapping from="język serbski" to="Serbian" />
+        <mapping from="serbski" to="Serbian" />
+        <mapping from="język serbsko-chorwacki" to="SerboCroatian" />
+        <mapping from="serbsko-chorwacki" to="SerboCroatian" />
+        <mapping from="język shelta" to="Shelta" />
+        <mapping from="shelta" to="Shelta" />
+        <mapping from="język shona" to="Shona" />
+        <mapping from="shona" to="Shona" />
+        <mapping from="język sindhi" to="Sindhi" />
+        <mapping from="sindhi" to="Sindhi" />
+        <mapping from="język sko" to="Skou" />
+        <mapping from="sko" to="Skou" />
+        <mapping from="język skolt" to="SkoltSami" />
+        <mapping from="skolt" to="SkoltSami" />
+        <mapping from="język somalijski" to="Somali" />
+        <mapping from="somalijski" to="Somali" />
+        <mapping from="język sorani" to="Soranî" />
+        <mapping from="sorani" to="Soranî" />
+        <mapping from="język staro-cerkiewno-słowiański" to="OldChurchSlavonic" />
+        <mapping from="staro-cerkiewno-słowiański" to="OldChurchSlavonic" />
+        <mapping from="język staro-wysoko-niemiecki" to="OldHighGerman" />
+        <mapping from="staro-wysoko-niemiecki" to="OldHighGerman" />
+        <mapping from="język staroangielski" to="OldEnglish" />
+        <mapping from="staroangielski" to="OldEnglish" />
+        <mapping from="język staroegipski" to="AncientEgyptian" />
+        <mapping from="staroegipski" to="AncientEgyptian" />
+        <mapping from="język starofrancuski" to="OldFrench" />
+        <mapping from="starofrancuski" to="OldFrench" />
+        <mapping from="język starogrecki" to="AncientGreek" />
+        <mapping from="starogrecki" to="AncientGreek" />
+        <mapping from="gr" to="AncientGreek" />
+        <mapping from="język staroirlandzki" to="OldIrish" />
+        <mapping from="staroirlandzki" to="OldIrish" />
+        <mapping from="język staronordyjski" to="OldNorse" />
+        <mapping from="staronordyjski" to="OldNorse" />
+        <mapping from="język staroormiański" to="OldArmenian" />
+        <mapping from="staroormiański" to="OldArmenian" />
+        <mapping from="język staroperski" to="OldPersian" />
+        <mapping from="staroperski" to="OldPersian" />
+        <mapping from="język staropolski" to="OldPolish" />
+        <mapping from="staropolski" to="OldPolish" />
+        <mapping from="język staroruski" to="OldRussian" />
+        <mapping from="staroruski" to="OldRussian" />
+        <mapping from="język suahili" to="Swahili" />
+        <mapping from="suahili" to="Swahili" />
+        <mapping from="język sumeryjski" to="Sumerian" />
+        <mapping from="sumeryjski" to="Sumerian" />
+        <mapping from="język sundajski" to="Sundanese" />
+        <mapping from="sundajski" to="Sundanese" />
+        <mapping from="język susu" to="Susu" />
+        <mapping from="susu" to="Susu" />
+        <mapping from="język sycylijski" to="Sicilian" />
+        <mapping from="sycylijski" to="Sicilian" />
+        <mapping from="język syngaleski" to="Sinhala" />
+        <mapping from="syngaleski" to="Sinhala" />
+        <mapping from="język szan" to="Shan" />
+        <mapping from="szan" to="Shan" />
+        <mapping from="język szerpa" to="Sherpa" />
+        <mapping from="szerpa" to="Sherpa" />
+        <mapping from="język szkocki" to="Scottish" />
+        <mapping from="szkocki" to="Scottish" />
+        <mapping from="język szkocki gaelicki" to="ScottishGaelic" />
+        <mapping from="szkocki gaelicki" to="ScottishGaelic" />
+        <mapping from="język szwabski" to="Swabian" />
+        <mapping from="szwabski" to="Swabian" />
+        <mapping from="język szwedzki" to="Swedish" />
+        <mapping from="szwedzki" to="Swedish" />
+        <mapping from="język słowacki" to="Slovak" />
+        <mapping from="słowacki" to="Slovak" />
+        <mapping from="język słoweński" to="Slovene" />
+        <mapping from="słoweński" to="Slovene" />
+        <mapping from="język słowiński" to="Slovincian" />
+        <mapping from="słowiński" to="Slovincian" />
+        <mapping from="język tabasarański" to="Tabassaran" />
+        <mapping from="tabasarański" to="Tabassaran" />
+        <mapping from="język tadżycki" to="Tajik" />
+        <mapping from="tadżycki" to="Tajik" />
+        <mapping from="język tagalski" to="Tagalog" />
+        <mapping from="tagalski" to="Tagalog" />
+        <mapping from="język tahitański" to="Tahitian" />
+        <mapping from="tahitański" to="Tahitian" />
+        <mapping from="język tajski" to="Thai" />
+        <mapping from="tajski" to="Thai" />
+        <mapping from="język tamaszek" to="Tamashek" />
+        <mapping from="tamaszek" to="Tamashek" />
+        <mapping from="język tamazight" to="CentralAtlasTamazight" />
+        <mapping from="tamazight" to="CentralAtlasTamazight" />
+        <mapping from="język tamilski" to="Tamil" />
+        <mapping from="tamilski" to="Tamil" />
+        <mapping from="język taos" to="NorthernTiwa" />
+        <mapping from="taos" to="NorthernTiwa" />
+        <mapping from="język tarencki" to="Tarantino" />
+        <mapping from="tarencki" to="Tarantino" />
+        <mapping from="język tashelhiyt" to="Tachelhit" />
+        <mapping from="tashelhiyt" to="Tachelhit" />
+        <mapping from="język tatarski" to="Tatar" />
+        <mapping from="tatarski" to="Tatar" />
+        <mapping from="język telugu" to="Telugu" />
+        <mapping from="telugu" to="Telugu" />
+        <mapping from="język tigre" to="Tigre" />
+        <mapping from="tigre" to="Tigre" />
+        <mapping from="język tigrinia" to="Tigrinya" />
+        <mapping from="tigrinia" to="Tigrinya" />
+        <mapping from="język tonga" to="Tonga" />
+        <mapping from="tonga" to="Tonga" />
+        <mapping from="język tumbuka" to="Tumbuka" />
+        <mapping from="tumbuka" to="Tumbuka" />
+        <mapping from="język turecki" to="Turkish" />
+        <mapping from="turecki" to="Turkish" />
+        <mapping from="język turkmeński" to="Turkmen" />
+        <mapping from="turkmeński" to="Turkmen" />
+        <mapping from="język tuwiński" to="Tuvinian" />
+        <mapping from="tuwiński" to="Tuvinian" />
+        <mapping from="język twi" to="Twi" />
+        <mapping from="twi" to="Twi" />
+        <mapping from="język tybetański" to="Tibetan" />
+        <mapping from="tybetański" to="Tibetan" />
+        <mapping from="język udmurcki" to="Udmurt" />
+        <mapping from="udmurcki" to="Udmurt" />
+        <mapping from="język ujgurski" to="Uyghur" />
+        <mapping from="ujgurski" to="Uyghur" />
+        <mapping from="język ukraiński" to="Ukrainian" />
+        <mapping from="ukraiński" to="Ukrainian" />
+        <mapping from="język urdu" to="Urdu" />
+        <mapping from="urdu" to="Urdu" />
+        <mapping from="język uwea" to="Wallisian" />
+        <mapping from="uwea" to="Wallisian" />
+        <mapping from="język uzbecki" to="Uzbek" />
+        <mapping from="uzbecki" to="Uzbek" />
+        <mapping from="język võro" to="VõroEstonian" />
+        <mapping from="võro" to="VõroEstonian" />
+        <mapping from="język walijski" to="Welsh" />
+        <mapping from="walijski" to="Welsh" />
+        <mapping from="język waloński" to="Walloon" />
+        <mapping from="waloński" to="Walloon" />
+        <mapping from="język warajski" to="Waray" />
+        <mapping from="warajski" to="Waray" />
+        <mapping from="język wczesny nowoangielski" to="EarlyModernEnglish" />
+        <mapping from="wczesny nowoangielski" to="EarlyModernEnglish" />
+        <mapping from="język wenecki" to="Venetian" />
+        <mapping from="wenecki" to="Venetian" />
+        <mapping from="język wepski" to="Veps" />
+        <mapping from="wepski" to="Veps" />
+        <mapping from="język wietnamski" to="Vietnamese" />
+        <mapping from="wietnamski" to="Vietnamese" />
+        <mapping from="język wilamowski" to="Wymysorys" />
+        <mapping from="wilamowski" to="Wymysorys" />
+        <mapping from="język wolof" to="Wolof" />
+        <mapping from="wolof" to="Wolof" />
+        <mapping from="język wotycki" to="Votic" />
+        <mapping from="wotycki" to="Votic" />
+        <mapping from="język wysokoislandzki" to="HighIcelandic" />
+        <mapping from="wysokoislandzki" to="HighIcelandic" />
+        <mapping from="język węgierski" to="Hungarian" />
+        <mapping from="węgierski" to="Hungarian" />
+        <mapping from="język włoski" to="Italian" />
+        <mapping from="włoski" to="Italian" />
+        <mapping from="język xhosa" to="Xhosa" />
+        <mapping from="xhosa" to="Xhosa" />
+        <mapping from="język zachodnioflamandzki" to="WestFlemish" />
+        <mapping from="zachodnioflamandzki" to="WestFlemish" />
+        <mapping from="język zarfatit" to="Zarphatic" />
+        <mapping from="zarfatit" to="Zarphatic" />
+        <mapping from="język zazaki" to="Zazaki" />
+        <mapping from="zazaki" to="Zazaki" />
+        <mapping from="język zelandzki" to="Zeeuws" />
+        <mapping from="zelandzki" to="Zeeuws" />
+        <mapping from="język zulu" to="Zulu" />
+        <mapping from="zulu" to="Zulu" />
+        <mapping from="język łaciński" to="Latin" />
+        <mapping from="łaciński" to="Latin" />
+        <mapping from="język łatgalski" to="Latgalian" />
+        <mapping from="łatgalski" to="Latgalian" />
+        <mapping from="język żmudzki" to="Samogitian" />
+        <mapping from="żmudzki" to="Samogitian" />
+        <mapping from="żmd" to="Samogitian" />
+        <mapping from="język łotewski" to="Latvian" />
+        <mapping from="łotewski" to="Latvian" />
+        <mapping from="język średnio-dolno-niemiecki" to="MiddleLowGerman" />
+        <mapping from="średnio-dolno-niemiecki" to="MiddleLowGerman" />
+        <mapping from="język średnio-wysoko-niemiecki" to="MiddleHighGerman" />
+        <mapping from="średnio-wysoko-niemiecki" to="MiddleHighGerman" />
+        <mapping from="język średnioangielski" to="MiddleEnglish" />
+        <mapping from="średnioangielski" to="MiddleEnglish" />
+    </mappings>
+    <postprocessing enabled="true" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.postprocessor.LemonOverlay">
+        <config>
+            <blockProperty uri="http://www.monnet-project.eu/lemon#sense" />
+            <inputTargetClass uri="http://wiktionary.dbpedia.org/terms/Sense" />
+            <followProperties>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPoSUsage"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasLangUsage"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasSense"/>
+            </followProperties>
+            <collectProperties>
+                <property uri="http://purl.org/dc/elements/1.1/language"/>
+                <property uri="http://www.w3.org/2000/01/rdf-schema#label"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPoS"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasMeaning"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasTranslation"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasExampleSentence"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasProverb"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPronunciationSingular"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPronunciationPlural"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasAntonym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasAudioSingular"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasAudioPlural"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasCollocation"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasEtymology"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyphenationSingular"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyphenationPlural"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyperonym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyponym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasSynonym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasSource"/>
+                <property uri="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <property uri="http://www.w3.org/2002/07/owl#sameAs"/>
+            </collectProperties>
+            <outputStartClass uri="http://www.monnet-project.eu/lemon#LexicalEntry" />
+            <outputAggregatedClass uri="http://www.monnet-project.eu/lemon#LexicalSense" />
+        </config>
+    </postprocessing>
+    <saveVars>
+        <var name="pos" />
+        <var name="language" />
+        <var name="definition" />
+    </saveVars>
+    <templateRepresentativeProperties>
+        <templateRepresentativeProperty tplName="audio" pKey="1" />
+        <templateRepresentativeProperty tplName="IPA3" pKey="1" />
+        <templateRepresentativeProperty tplName="AS3" pKey="1" />
+    </templateRepresentativeProperties>
+    <page name="page">
+        <triples>
+            <!-- a label -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://www.w3.org/2000/01/rdf-schema#label" o="$entityId" oType="literal"/>
+            <!-- a link to the wiktionary page -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://pl.wiktionary.org/wiki/uri($entityId)" oType="URI"/>
+            <!-- provenance: list of authors -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://purl.org/dc/elements/1.1/creator" o="http://pl.wiktionary.org/w/index.php?title=uri($entityId)&amp;action=history" oType="URI"/>
+            <!-- a type declaration -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" o="http://wiktionary.dbpedia.org/terms/LexicalEntity" oType="URI"/>
+        </triples>
+        <prologs>
+            <template name="redirect">
+                <resultTemplates>
+                    <resultTemplate>
+                        <triples>
+                            <triple s="$block" p="http://www.w3.org/2002/07/owl#sameAs" o="http://wiktionary.dbpedia.org/resource/uri($otherPage)" oType="URI"/>
+                        </triples>
+                    </resultTemplate>
+                </resultTemplates>
+                <wikiTemplate>#REDIRECT ~~InternalLinkNode|$word|$otherPage~~</wikiTemplate>
+            </template>
+            <template name="also">
+                <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://wiktionary.dbpedia.org/resource/uri($other)" oType="URI"/>
+                               </triples>
+                            
+                            </resultTemplate>
+                </resultTemplates>
+                <wikiTemplate>{{zob|$other}}</wikiTemplate>
+            </template>
+            <template name="wikipedia2">
+                <resultTemplates>
+                    <resultTemplate>
+                        <triples>
+                            <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://pl.wikipedia.org/wiki/uri($word)" oType="URI"/>
+                            <triple s="$block" p="http://www.w3.org/2002/07/owl#sameAs" o="http://dbpedia.org/resource/uri($word)" oType="URI"/>
+                        </triples>
+                    </resultTemplate>
+                 </resultTemplates>
+                 <wikiTemplate>{{wikipedia|$word}}</wikiTemplate>
+            </template>
+            <template name="otherLanguages">
+                <resultTemplates>
+                    <resultTemplate>
+                        <triples>
+                            <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://$lang.wiktionary.org/wiki/uri($otherPage)" type="resource" />
+                        </triples>
+                    </resultTemplate>
+                </resultTemplates>
+                <wikiTemplate>
+(~~InterWikiLinkNode|$lang:$otherPage|$label~~
+)*</wikiTemplate>
+            </template>
+        </prologs>
+        <epilogs>
+<!--
+            <template name="otherLanguages">
+                <resultTemplates>
+                    <resultTemplate>
+                        <triples>
+                            <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://$lang.wiktionary.org/wiki/uri($otherPage)" type="resource" />
+                        </triples>
+                    </resultTemplate>
+                </resultTemplates>
+                <wikiTemplate>
+(~~InterWikiLinkNode|$lang:$otherPage|$label~~
+)*</wikiTemplate>
+            </template>
+-->
+        </epilogs>
+        <block name="lang" property="http://wiktionary.dbpedia.org/terms/hasLangUsage" >
+            <indicators>
+                <indicator name="lang-start">
+                    <resultTemplates>
+                        <resultTemplate>
+                            <triples>
+                                <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasLangUsage" o="$block-uri(map($language))" oType="URI" oNewBlock="true" />
+                                <triple s="$block" p="http://purl.org/dc/elements/1.1/language" o="http://wiktionary.dbpedia.org/terms/uri(map($language))" oType="URI"/>
+                            </triples>
+                        </resultTemplate>
+                    </resultTemplates>
+                    <wikiTemplate>== $word ({{$language}}) ==
+</wikiTemplate>
+                </indicator>
+            </indicators>
+            <templates>
+                <template name="translation" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.EnglishTranslationHelper">
+                    <!-- no result template here - triples are generated by helper -->
+                    <wikiTemplate>{{tłumaczenia}}
+(*(:)? $lang $line
+)*
+</wikiTemplate>
+                </template>
+                <template name="etymology">
+                    <resultTemplates>
+                        <resultTemplate>
+                            <triples>
+                                <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasEtymology" o="$etymology" oType="literal"/>
+                            </triples>
+                        </resultTemplate>
+                    </resultTemplates>
+                    <wikiTemplate>{{etymologia}}
+: $etymology
+</wikiTemplate>
+                </template>
+                <template name="wikipedia">
+                    <resultTemplates>
+                        <resultTemplate>
+                            <triples>
+                                <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://pl.wikipedia.org/wiki/uri($entityId)" oType="URI"/>
+                                <triple s="$block" p="http://www.w3.org/2002/07/owl#sameAs" o="http://pl.dbpedia.org/resource/uri($entityId)" oType="URI"/>
+                            </triples>
+                        </resultTemplate>
+                    </resultTemplates>
+                    <wikiTemplate>{{wikipedia}}</wikiTemplate>
+                </template>
+                <template name="wikipedia2">
+                    <resultTemplates>
+                        <resultTemplate>
+                            <triples>
+                                <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://pl.wikipedia.org/wiki/uri($word)" oType="URI"/>
+                                <triple s="$block" p="http://www.w3.org/2002/07/owl#sameAs" o="http://pl.dbpedia.org/resource/uri($word)" oType="URI"/>
+                            </triples>
+                        </resultTemplate>
+                    </resultTemplates>
+                    <wikiTemplate>{{wikipedia|$word}}</wikiTemplate>
+                </template>
+<!--
+                <template name="pronunciation">
+                    <resultTemplates>
+                        <resultTemplate>
+                            <triples>
+                                <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasPronunciation" o="$pronunciation" oType="literal"/>
+                            </triples>
+                        </resultTemplate>
+                    </resultTemplates>
+                    <wikiTemplate>{{wymowa}}(*$pronunciation
+)+
+</wikiTemplate>
+                </template>
+-->
+            </templates>
+        </block>
+    </page>
+</config>
