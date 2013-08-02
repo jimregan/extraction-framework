@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <ignore>
+        <page startsWith="Speciální:" />
+        <page startsWith="Diskuse:" />
+        <page startsWith="Uživatel:" />
+        <page startsWith="Diskuse s uživatelem" />
+        <page startsWith="Wikislovník:" />
+        <page startsWith="Diskuse k Wikislovníku:" />
+        <page startsWith="Soubor:" />
+        <page startsWith="Diskuse k souboru:" />
+        <page startsWith="MediaWiki:" />
+        <page startsWith="Diskuse k MediaWiki:" />
+        <page startsWith="Nápověda:" />
+        <page startsWith="Diskuse k nápovědě:" />
+        <page startsWith="Kategorie:" />
+        <page startsWith="Diskuse ke kategorii:" />
+        <page startsWith="Diskuse k modulu:" />
+        <page startsWith="Diskuse k příloze:" />
+    </ignore>
+    <mappings>
+        <mapping from="podstatné jméno" to="Noun"/>
+        <mapping from="rod ženský" to="Feminine"/>
+        <mapping from="rod mužský životný" to="MasculineAnimate"/>
+        <mapping from="rod mužský" to="Masculine"/>
+        <mapping from="sloveso" to="Verb"/>
+        <mapping from="přídavné jméno" to="Adjective"/>
+        <mapping from="vlastní jméno" to="ProperNoun"/>
+
+        <mapping from="starořečtina" to="AncientGreek" />
+        <mapping from="stará angličtina" to="OldEnglish" />
+        <mapping from="střední horní němčina" to="MiddleHighGerman" />
+        <mapping from="stará perština" to="OldPersian" />
+    </mappings>
+    <postprocessing enabled="true" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.postprocessor.LemonOverlay">
+        <config>
+            <blockProperty uri="http://www.monnet-project.eu/lemon#sense" />
+            <inputTargetClass uri="http://wiktionary.dbpedia.org/terms/Sense" />
+            <followProperties>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPoSUsage"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasLangUsage"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasSense"/>
+            </followProperties>
+            <collectProperties>
+                <property uri="http://purl.org/dc/elements/1.1/language"/>
+                <property uri="http://www.w3.org/2000/01/rdf-schema#label"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPoS"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasMeaning"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasTranslation"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasExampleSentence"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasProverb"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPronunciationSingular"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasPronunciationPlural"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasAntonym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasAudioSingular"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasAudioPlural"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasCollocation"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasRelatedTerm"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasEtymology"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyphenationSingular"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyphenationPlural"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyperonym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasHyponym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasSynonym"/>
+                <property uri="http://wiktionary.dbpedia.org/terms/hasSource"/>
+                <property uri="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+                <property uri="http://www.w3.org/2002/07/owl#sameAs"/>
+            </collectProperties>
+            <outputStartClass uri="http://www.monnet-project.eu/lemon#LexicalEntry" />
+            <outputAggregatedClass uri="http://www.monnet-project.eu/lemon#LexicalSense" />
+        </config>
+    </postprocessing>
+    <templateRepresentativeProperties>
+        <!-- FIXME -->
+        <templateRepresentativeProperty tplName="Ü" pKey="2" />
+        <templateRepresentativeProperty tplName="Üxx" pKey="2" />
+    </templateRepresentativeProperties>
+    <nodeHandlers>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (cs)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (sk)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (sr)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (uk)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (ru)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (pl)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (csb)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (lt)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (la)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sabl" uri="http://wiktionary.dbpedia.org/terms/ablativeSingular" />
+            <mapping label="pabl" uri="http://wiktionary.dbpedia.org/terms/ablativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (sl)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="dnom" uri="http://wiktionary.dbpedia.org/terms/nominativeDual" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="dgen" uri="http://wiktionary.dbpedia.org/terms/genitiveDual" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="ddat" uri="http://wiktionary.dbpedia.org/terms/dativeDual" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="dacc" uri="http://wiktionary.dbpedia.org/terms/accusativeDual" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="dins" uri="http://wiktionary.dbpedia.org/terms/instrumentalDual" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="dloc" uri="http://wiktionary.dbpedia.org/terms/locativeDual" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (dsb)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="dnom" uri="http://wiktionary.dbpedia.org/terms/nominativeDual" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="dgen" uri="http://wiktionary.dbpedia.org/terms/genitiveDual" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="ddat" uri="http://wiktionary.dbpedia.org/terms/dativeDual" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="dacc" uri="http://wiktionary.dbpedia.org/terms/accusativeDual" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="dins" uri="http://wiktionary.dbpedia.org/terms/instrumentalDual" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="dloc" uri="http://wiktionary.dbpedia.org/terms/locativeDual" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (hsb)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="dnom" uri="http://wiktionary.dbpedia.org/terms/nominativeDual" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="dgen" uri="http://wiktionary.dbpedia.org/terms/genitiveDual" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="ddat" uri="http://wiktionary.dbpedia.org/terms/dativeDual" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="dacc" uri="http://wiktionary.dbpedia.org/terms/accusativeDual" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+            <mapping label="sins" uri="http://wiktionary.dbpedia.org/terms/instrumentalSingular" />
+            <mapping label="dins" uri="http://wiktionary.dbpedia.org/terms/instrumentalDual" />
+            <mapping label="pins" uri="http://wiktionary.dbpedia.org/terms/instrumentalPlural" />
+            <mapping label="sloc" uri="http://wiktionary.dbpedia.org/terms/locativeSingular" />
+            <mapping label="dloc" uri="http://wiktionary.dbpedia.org/terms/locativeDual" />
+            <mapping label="ploc" uri="http://wiktionary.dbpedia.org/terms/locativePlural" />
+            <mapping label="svoc" uri="http://wiktionary.dbpedia.org/terms/vocativeSingular" />
+            <mapping label="dvoc" uri="http://wiktionary.dbpedia.org/terms/vocativeDual" />
+            <mapping label="pvoc" uri="http://wiktionary.dbpedia.org/terms/vocativePlural" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Substantivum (ang)">
+            <mapping label="snom" uri="http://wiktionary.dbpedia.org/terms/nominativeSingular" />
+            <mapping label="pnom" uri="http://wiktionary.dbpedia.org/terms/nominativePlural" />
+            <mapping label="sgen" uri="http://wiktionary.dbpedia.org/terms/genitiveSingular" />
+            <mapping label="pgen" uri="http://wiktionary.dbpedia.org/terms/genitivePlural" />
+            <mapping label="sdat" uri="http://wiktionary.dbpedia.org/terms/dativeSingular" />
+            <mapping label="pdat" uri="http://wiktionary.dbpedia.org/terms/dativePlural" />
+            <mapping label="sacc" uri="http://wiktionary.dbpedia.org/terms/accusativeSingular" />
+            <mapping label="pacc" uri="http://wiktionary.dbpedia.org/terms/accusativePlural" />
+        </nodeHandler>
+
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Stupňování (cs)">
+            <mapping label="poz" uri="http://wiktionary.dbpedia.org/terms/hasPositiveForm" />
+            <mapping label="komp" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="komp2" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="sup" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+            <mapping label="sup2" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Stupňování (uk)">
+            <mapping label="poz" uri="http://wiktionary.dbpedia.org/terms/hasPositiveForm" />
+            <mapping label="komp" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="komp2" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="sup" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+            <mapping label="sup2" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Stupňování (pl)">
+            <mapping label="poz" uri="http://wiktionary.dbpedia.org/terms/hasPositiveForm" />
+            <mapping label="komp" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="komp2" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="sup" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+            <mapping label="sup2" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Stupňování (lt)">
+            <mapping label="poz" uri="http://wiktionary.dbpedia.org/terms/hasPositiveForm" />
+            <mapping label="dkomp" uri="http://wiktionary.dbpedia.org/terms/hasDegradedComparativeForm" />
+            <mapping label="komp" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="sup" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+            <mapping label="asup" uri="http://wiktionary.dbpedia.org/terms/hasAbsoluteSuperlativeForm" />
+        </nodeHandler>
+        <nodeHandler order="parsing" builtin="InfoBoxMapper" tplname="Stupňování (la)">
+            <mapping label="poz" uri="http://wiktionary.dbpedia.org/terms/hasPositiveForm" />
+            <mapping label="komp" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="komp2" uri="http://wiktionary.dbpedia.org/terms/hasComparativeForm" />
+            <mapping label="sup" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+            <mapping label="sup2" uri="http://wiktionary.dbpedia.org/terms/hasSuperlativeForm" />
+        </nodeHandler>
+    </nodeHandlers>
+    <saveVars>
+        <var name="pos" />
+        <var name="language" />
+    </saveVars>
+    <page name="page">
+        <triples>
+            <!-- a label -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://www.w3.org/2000/01/rdf-schema#label" o="$entityId" oType="literal"/>
+            <!-- a link to the wiktionary page -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://cs.wiktionary.org/wiki/uri($entityId)" oType="URI"/>
+            <!-- provenance: list of authors -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://purl.org/dc/elements/1.1/creator" o="http://cs.wiktionary.org/w/index.php?title=uri($entityId)&amp;action=history" oType="URI"/>
+            <!-- a type declaration -->
+            <triple s="http://wiktionary.dbpedia.org/resource/uri($entityId)" p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" o="http://wiktionary.dbpedia.org/terms/LexicalEntity" oType="URI"/>
+        </triples>
+        <prologs>
+<!--
+            <template name="also">
+                <resultTemplates>
+                    <resultTemplate>
+                        <triples>
+                            <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://wiktionary.dbpedia.org/resource/uri($otherPage)" oType="URI"/>
+                            <triple s="http://wiktionary.dbpedia.org/resource/uri($word)" p="http://www.w3.org/2000/01/rdf-schema#label" o="$otherPage" oType="literal"/>
+                        </triples>
+                    </resultTemplate>
+                </resultTemplates>
+                <wikiTemplate>{{Siehe auch|$otherPage}}</wikiTemplate>
+            </template>
+-->
+            <template name="redirect">
+                <resultTemplates>
+                    <resultTemplate>
+                        <triples>
+                            <triple s="$block" p="http://www.w3.org/2002/07/owl#sameAs" o="http://wiktionary.dbpedia.org/resource/uri($word)" oType="URI"/>
+                            <triple s="http://wiktionary.dbpedia.org/resource/uri($word)" p="http://www.w3.org/2000/01/rdf-schema#label" o="$word" oType="literal"/>
+                        </triples>
+                    </resultTemplate>
+                </resultTemplates>
+                <wikiTemplate>#REDIRECT ~~InternalLinkNode|$word~~</wikiTemplate>
+            </template>
+        </prologs>
+        <epilogs>
+            <template name="otherLanguages">
+                <resultTemplates>
+                    <resultTemplate>
+                        <triples>
+                            <triple s="$block" p="http://www.w3.org/2000/01/rdf-schema#seeAlso" o="http://$lang.wiktionary.org/wiki/uri($otherPage)" oType="URI"/>
+                        </triples>
+                    </resultTemplate>
+                </resultTemplates>
+                <wikiTemplate>(~~ExternalLinkNode|$lang:$otherPage|$label~~
+)*</wikiTemplate>
+            </template>
+        </epilogs>
+        <block name="lang">
+            <indicators>
+                <indicator name="lang-start">
+                    <resultTemplates>
+                        <resultTemplate>
+                            <triples>
+                                <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasLangUsage" o="$block-uri(map($language))" oType="URI" oNewBlock="true" />
+                                <triple s="$block" p="http://purl.org/dc/elements/1.1/language" o="http://wiktionary.dbpedia.org/terms/uri(map($language))" oType="URI" />
+                            </triples>
+                        </resultTemplate>
+                    </resultTemplates>
+                    <wikiTemplate>== $language ==</wikiTemplate>
+                </indicator>
+            </indicators>
+            <block name="pos">
+                <indicators>
+                    <indicator name="pos-start">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasPoSUsage" o="$block-uri(map(assertMapped($pos)))" oType="URI" oNewBlock="true" />
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasPoS" o="http://wiktionary.dbpedia.org/terms/uri(map($pos))" oType="URI" />
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates>
+                        <wikiTemplate>=== $pos ===</wikiTemplate>
+                    </indicator>
+                </indicators>
+<!-- FIXME: enumerate
+                <templates>
+                    <template name="meaning-example">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasSense" o="$block-clean($meaningId)cs" oType="URI"/>
+                                    <triple s="$block-clean($meaningId)cs" p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" o="http://wiktionary.dbpedia.org/terms/Sense" oType="URI"/>
+                                    <triple s="$block-clean($meaningId)cs" p="http://wiktionary.dbpedia.org/terms/hasMeaning" o="$meaning" oType="literal" />
+                                    <triple s="$block-clean($meaningId)cs" p="http://wiktionary.dbpedia.org/terms/hasExampleSentence" o="$example" oType="literal" />
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates>
+                        <wikiTemplate>==== význam ====
+(# $meaning
+#* {{Příklad|cs|$example}}
+)+
+</wikiTemplate>
+                    </template>
+-->
+                    <template name="hyphenation">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasHyphenationSingular" o="$hyphenation" oType="literal" />
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates>
+                        <wikiTemplate>=== dělení ===
+*$hyphenation
+</wikiTemplate>
+                    </template>
+                    <template name="etymology1">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block-clean($meaningId)de" p="http://wiktionary.dbpedia.org/terms/hasEtymology" o="$etymology" oType="literal" />
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates>
+                        <wikiTemplate>=== etymologie ===
+$etymology
+</wikiTemplate>
+                    </template>
+                    <template name="proverbs">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasProverb" o="$proverb" oType="literal" />
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates>
+                        <wikiTemplate>==== přísloví, rčení a pořekadla ====
+(*$proverb
+)+
+</wikiTemplate>
+                    </template>
+                    <!--template name="overview">
+                        <vars>
+                        </vars>
+                        <wikiTemplate>{{$language $pos Übersicht|
+Singular=$flection-singular
+|Plural=$flection-plural
+}}</wikiTemplate>
+                    </template-->
+                    <template name="pronunciation">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasAudioSingular" o="http://uploads.wikimedia/uri($audioSingular)" oType="URI" />
+                                </triples>
+                            </resultTemplate>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasAudioPlural" o="http://uploads.wikimedia/uri($audioPlural)" oType="URI" />
+                                </triples>
+                            </resultTemplate>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasPronunciationPlural" o="$pronunciationPlural" oType="literal" oLang="de-fonipa"/>
+                                </triples>
+                            </resultTemplate>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasPronunciationSingular" o="$pronunciationSingular" oType="literal" oLang="de-fonipa"/>
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates>
+                        <wikiTemplate>{{Aussprache}}
+:{{IPA}} {{Lautschrift|$pronunciationSingular}}, {{Pl.}} {{Lautschrift|$pronunciation-plural}}
+:{{Hörbeispiele}} {{Audio|$audioSingular}}, {{Pl.}} {{Audio|$audio-plural}}
+</wikiTemplate>
+                    </template>
+                    <!--template name="reference">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block-clean($meaningId)de" p="http://wiktionary.dbpedia.org/terms/hasReference" o="$reference" oType="literal" />
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates> 
+                        <wikiTemplate>{{Referenzen}}
+(:[$meaningId] $reference
+)+
+</wikiTemplate>
+                    </template-->
+                    <template name="source">
+                        <resultTemplates>
+                            <resultTemplate>
+                                <triples>
+                                    <triple s="$block" p="http://wiktionary.dbpedia.org/terms/hasSource" o="$source" oType="literal" />
+                                </triples>
+                            </resultTemplate>
+                        </resultTemplates> 
+                        <wikiTemplate>{{Quellen}}
+(:$source
+)+</wikiTemplate>
+                    </template>
+                    <template name="translation" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.GermanTranslationHelper">
+                        <!-- no result template here - triples are generated by helper -->
+                        <wikiTemplate>==== Übersetzungen ====
+{{Ü-links}}
+(*$lang: $line
+)*{{Ü-Abstand}}
+(*$lang: $line
+)*
+{{Ü-rechts}}
+
+</wikiTemplate>
+                    </template>
+                    <template name="collocation" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasCollocation"/>
+                        </parameters>
+                        <wikiTemplate>{{Charakteristische Wortkombinationen}}
+(:[$meaningId] $line
+)+
+</wikiTemplate>
+                    </template>
+                    <template name="synonyms" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasSynonym"/>
+                        </parameters> 
+                        <wikiTemplate>==== synonyma ====
+(# $line
+)+
+</wikiTemplate>
+                    </template>
+                    <template name="hyperonym" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasHyperonym"/>
+                        </parameters> 
+                        <wikiTemplate>{{Oberbegriffe}}
+(:[$meaningId] $line
+)+
+</wikiTemplate>
+                    </template>
+                    <template name="hyponym" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasHyponym"/>
+                        </parameters> 
+                        <wikiTemplate>{{Unterbegriffe}}
+(:[$meaningId] $line
+)+
+</wikiTemplate>
+                    </template>
+                    <template name="antonym" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasAntonym"/>
+                        </parameters> 
+                        <wikiTemplate>==== antonyma ====
+(# $line
+)+
+</wikiTemplate>
+                    </template>
+                    <template name="relatedWords" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasRelatedTerm"/>
+                        </parameters> 
+                        <wikiTemplate>{{Sinnverwandte Wörter}}
+(:[$meaningId] $line
+)+
+</wikiTemplate>
+                    </template>
+                    <template name="femaleVersions" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasFemaleForm"/>
+                        </parameters> 
+                        <wikiTemplate>{{Weibliche Wortformen}}
+(:[$meaningId] $line
+)+
+</wikiTemplate>
+                    </template>
+                    <template name="smaller" ppClass="org.dbpedia.extraction.mappings.wikitemplate.wiktionary.bindinghandler.ExplicitSenseLinkListHelper">
+                        <parameters>
+                            <parameter name="linkProperty" value="http://wiktionary.dbpedia.org/terms/hasDiminutive"/>
+                        </parameters> 
+                        <wikiTemplate>{{Verkleinerungsformen}}
+(:[$meaningId] $line
+)+
+</wikiTemplate>
+                    </template>
+                </templates>
+            </block>
+        </block>
+    </page>
+</config>
